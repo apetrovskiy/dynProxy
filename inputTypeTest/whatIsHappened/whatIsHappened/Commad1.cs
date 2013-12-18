@@ -20,8 +20,14 @@ namespace whatIsWanted
         protected override void BeginProcessing()
         {
             // ISomeClass someClass = new SomeClass();
-            ISomeClass someClass = ObjectFactory.GetObject<ISomeClass>();
-            WriteObject(someClass);
+            ISomeClass someClass01 = ObjectFactory.GetObject<ISomeClass>();
+            someClass01.StringData = "some class 01";
+            SomeClass.StringStaticData = "static data 01";
+            WriteObject(someClass01);
+            ISomeClass someClass02 = ObjectFactory.GetObject<ISomeClass>();
+            someClass02.StringData = "some class 02";
+            SomeClass.StringStaticData = "static data 02";
+            WriteObject((object)someClass02);
         }
     }
 }
