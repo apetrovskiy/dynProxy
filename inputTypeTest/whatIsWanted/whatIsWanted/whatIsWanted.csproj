@@ -54,7 +54,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Commad1.cs" />
+    <Compile Include="Command1.cs" />
     <Compile Include="Command2.cs" />
     <Compile Include="ISomeClass.cs" />
     <Compile Include="NInject\ObjectFactory.cs" />

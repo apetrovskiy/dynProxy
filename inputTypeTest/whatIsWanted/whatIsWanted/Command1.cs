@@ -15,7 +15,7 @@ namespace whatIsWanted
     /// Description of Commad1.
     /// </summary>
     [Cmdlet(VerbsCommon.New, "Something")]
-    public class Commad1 : PSCmdlet
+    public class Command1 : PSCmdlet
     {
         protected override void BeginProcessing()
         {
